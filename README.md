@@ -162,7 +162,7 @@ backend_project/
 
 ### 1. **Postman Request for `/ask` Endpoint**
 
-![Postman](https://user-images.githubusercontent.com/placeholder/postman_screenshot.png)
+![Postman](https://github.com/yazandahood8/Flask-Backend-Project/blob/main/postman.png)
 
 ### 2. **Docker Compose Up**
 
