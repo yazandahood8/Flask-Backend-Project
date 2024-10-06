@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:13-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: dbname
+    ports:
+      - "5432:5432"
+
+  web:
+    build: .
+    command: flask run --host=0.0.0.0
+    ports:
+      - "5000:5000"
+    environment:
+      - SQLALCHEMY_DATABASE_URI=postgresql://postgres:1234@db:5432/dbname
+    depends_on:
+      - db
+    networks:
+      - default  # This makes sure it is in the same network
