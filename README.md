@@ -63,7 +63,7 @@ This project is a backend application developed with Flask and PostgreSQL that i
 1. **Clone the repository**:
 
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/yazandahood8/Flask-Backend-Project.git>
    cd backend_project
    ```
 
