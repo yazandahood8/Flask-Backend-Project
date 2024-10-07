@@ -168,9 +168,9 @@ backend_project/
 
 ![Docker Compose](https://github.com/yazandahood8/Flask-Backend-Project/blob/main/docker.png)
 
-### 3. **Database Migration**
+### 3. **PostgreSQL database**
 
-![Alembic Migration](https://user-images.githubusercontent.com/placeholder/alembic_migration.png)
+![PostgreSQL database](https://github.com/yazandahood8/Flask-Backend-Project/blob/main/sql.png)
 
 ---
 
