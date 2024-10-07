@@ -166,7 +166,7 @@ backend_project/
 
 ### 2. **Docker Compose Up**
 
-![Docker Compose](https://user-images.githubusercontent.com/placeholder/docker_compose.png)
+![Docker Compose](https://github.com/yazandahood8/Flask-Backend-Project/blob/main/docker.png)
 
 ### 3. **Database Migration**
 
