@@ -7,6 +7,13 @@ services:
       POSTGRES_DB: dbname
     ports:
       - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s       # Check every 10 seconds
+      timeout: 5s         # Timeout for each check
+      retries: 5          # Retry up to 5 times before marking as unhealthy
 
   web:
     build: .
@@ -16,6 +23,10 @@ services:
     environment:
       - SQLALCHEMY_DATABASE_URI=postgresql://postgres:1234@db:5432/dbname
     depends_on:
-      - db
+      db:
+        condition: service_healthy  # Wait until the db service is healthy
     networks:
-      - default  # This makes sure it is in the same network
+      - default
+
+volumes:
+  db_data:

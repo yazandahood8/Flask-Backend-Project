@@ -7,7 +7,7 @@ load_dotenv()  # This function loads all variables defined in the .env file into
 # Define the Config class to store application configuration settings
 class Config:
     # Get the database URL from the environment variable, with a default value if not set
-    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'postgresql://postgres:1234@localhost:5432/dbname')
+    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'postgresql://postgres:1234@db:5432/dbname')
 
     # Disable SQLAlchemy's track modifications feature to save resources
     SQLALCHEMY_TRACK_MODIFICATIONS = False

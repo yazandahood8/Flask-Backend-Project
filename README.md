@@ -63,7 +63,7 @@ This project is a backend application developed with Flask and PostgreSQL that i
 1. **Clone the repository**:
 
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/yazandahood8/Flask-Backend-Project.git>
    cd backend_project
    ```
 
@@ -162,15 +162,15 @@ backend_project/
 
 ### 1. **Postman Request for `/ask` Endpoint**
 
-![Postman](https://user-images.githubusercontent.com/placeholder/postman_screenshot.png)
+![Postman](https://github.com/yazandahood8/Flask-Backend-Project/blob/main/postman.png)
 
 ### 2. **Docker Compose Up**
 
-![Docker Compose](https://user-images.githubusercontent.com/placeholder/docker_compose.png)
+![Docker Compose](https://github.com/yazandahood8/Flask-Backend-Project/blob/main/docker.png)
 
-### 3. **Database Migration**
+### 3. **PostgreSQL database**
 
-![Alembic Migration](https://user-images.githubusercontent.com/placeholder/alembic_migration.png)
+![PostgreSQL database](https://github.com/yazandahood8/Flask-Backend-Project/blob/main/sql.png)
 
 ---
 
